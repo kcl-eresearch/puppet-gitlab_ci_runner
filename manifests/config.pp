@@ -26,6 +26,7 @@ class gitlab_ci_runner::config (
     group          => $config_group,
     mode           => $config_mode,
     ensure_newline => true,
+    show_diff      => false;
   }
 
   $global_options = {
